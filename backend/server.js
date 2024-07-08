@@ -17,7 +17,7 @@ const fetchData = async () => {
         fs.writeFile('combinedData.json', JSON.stringify(combinedData, null, 2), 'utf-8');
 
     } catch (error) {
-        console.error('Error fetching data from APIs or writing to file:', error.message);
+        console.error(error.message);
     }
 };
 
